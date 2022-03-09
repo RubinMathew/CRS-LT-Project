@@ -28,7 +28,7 @@ public class AdminController {
  DiscoveryClass  discoveryClass;
 
 	/**
-	 * 
+	 * This method is to view All courses in the Catalog
 	 * @return
 	 * @throws RestClientException
 	 * @throws IOException
@@ -48,7 +48,13 @@ public class AdminController {
 	}
 	return response;
 	}
-	
+	/**
+	 * This method is to give approval to the student by admin
+	 * @param studentId
+	 * @return
+	 * @throws RestClientException
+	 * @throws IOException
+	 */
 	@RequestMapping(value = "/approve", method = RequestMethod.POST)
 	@ResponseBody
 	public ResponseEntity<?> approveAdmissionRequest(@RequestParam(value = "studentId") String studentId) throws RestClientException, IOException {
