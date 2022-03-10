@@ -1,0 +1,341 @@
+
+Adding Course To Catalog 
+------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Adding Course to Catalog </h2>
+<table>
+<form method="post">
+  <tr>
+    <td>Course Code </td>
+    <td><input type="text" name="courseCode" id="id_courseCode" /></td>
+  </tr>
+   <tr>
+    <td>Course Name </td>
+    <td><input type="text" name="courseName" id="id_courseName"/></td>
+  </tr>
+  <tr>
+    <td>Course Description </td>
+    <td><textarea name="description" id="id_courseName" rows="2"></textarea></td>
+    <tr><td align="right">
+    <input type="submit" Value="Add Course" id="idAddCourse"/></td>
+    <td>
+    <input type="button" Value="Cancel" id="idCancel"/></td>
+    </tr>
+
+  </tr>
+</form>
+</table>
+</body>
+</html>
+
+******************************************************************************************************************************************
+
+View Catalog
+----------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2> Course Catalog </h2>
+
+<table>
+  <tr>
+    <th>Course Code</th>
+    <th>Course Name</th>
+    <th>Description </th>
+  </tr>
+  <tr>
+    <td>OCJ</td>
+    <td>Java</td>
+    <td>Java Certification </td>
+  </tr>
+   <tr>
+    <td>OCJ</td>
+    <td>Java</td>
+    <td>Java Certification </td>
+  </tr>
+   <tr>
+    <td>OCJ</td>
+    <td>Java</td>
+    <td>Java Certification </td>
+  </tr>
+   <tr>
+    <td>OCJ</td>
+    <td>Java</td>
+    <td>Java Certification </td>
+  </tr>
+   <tr>
+    <td>OCJ</td>
+    <td>Java</td>
+    <td>Java Certification </td>
+  </tr>
+   <tr>
+    <td>OCJ</td>
+    <td>Java</td>
+    <td>Java Certification </td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+****************************************************************************************************************************************************
+Delete Course From Catalog
+--------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2> Delete From Catalog</h2>
+
+<table>
+  <tr>
+    <th>Course Code</th>
+    <th>Course Name</th>
+    <th>Description </th>
+    <th>Action</th>
+    
+  </tr>
+  <tr>
+    <td>OCJ</td>
+    <td>Java</td>
+    <td>Java Certification </td>
+    <td><button> Delete </button></td>
+  </tr>
+   <tr>
+    <td>OCJ</td>
+    <td>Java</td>
+    <td>Java Certification </td>
+    <td><button> Delete </button></td>
+  </tr>
+   <tr>
+    <td>OCJ</td>
+    <td>Java</td>
+    <td>Java Certification </td>
+    <td><button> Delete </button></td>
+  </tr>
+   <tr>
+    <td>OCJ</td>
+    <td>Java</td>
+    <td>Java Certification </td>
+    <td><button> Delete </button></td>
+  </tr>
+   <tr>
+    <td>OCJ</td>
+    <td>Java</td>
+    <td>Java Certification </td>
+    <td><button> Delete </button></td>
+  </tr>
+   <tr>
+    <td>OCJ</td>
+    <td>Java</td>
+    <td>Java Certification </td>
+    <td><button> Delete </button></td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+**************************************************************************************************************************************
+Approve Student
+----------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2> Student Approval</h2>
+
+<table>
+<form method="post" action="#">
+  <tr>
+    <td>Student ID</td>
+    <td><select id="studentId" name="studentId" onchange="getStudentByid()"><option>Select</option</select></td>
+  </tr>
+   <tr>
+    <td>Student Name</td>
+    <td>---</td>
+  </tr>
+   <tr>
+    <td>Branch</td>
+    <td>---</td>
+  </tr>
+   <tr>
+    <td>Batch</td>
+    <td>--</td>
+  </tr>
+   <tr>
+    <td><input type="submit" value="Approve" /></td>
+    <td><button>Cancel</button></td>
+  </tr>
+   
+  </form>
+</table>
+
+</body>
+</html>
+
+**************************************************************************************************************************
+List of Unapproved Students
+-------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>List : UnApproved Students </h2>
+
+<table>
+  <tr>
+    <th>Student ID</th>
+    <th>Name </th>
+    <th>Batch</th>
+    <th>Branch</th>
+
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+     <td>Germany</td>
+
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+     <td>Germany</td>
+
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+     <td>Germany</td>
+
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+     <td>Germany</td>
+
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+     <td>Germany</td>
+ 
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+     <td>Germany</td>
+
+  </tr>
+</table>
+
+</body>
+</html>
+
+
